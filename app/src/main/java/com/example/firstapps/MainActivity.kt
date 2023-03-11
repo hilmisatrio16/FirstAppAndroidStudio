@@ -1,5 +1,6 @@
 package com.example.firstapps
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
             val toas = Toast.makeText(this,"JANGAN NANGIS", Toast.LENGTH_SHORT)
             toas.show()
             Log.d("AKSI","Telah ditekan cuy")
+
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
     }
