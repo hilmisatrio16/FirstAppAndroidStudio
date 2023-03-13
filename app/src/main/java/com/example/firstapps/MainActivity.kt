@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         var img = findViewById<ImageView>(R.id.img)
 
         img.setOnClickListener {
-            val toas = Toast.makeText(this,"JANGAN NANGIS", Toast.LENGTH_SHORT)
+            val toas = Toast.makeText(this,"Telah ditekan", Toast.LENGTH_SHORT)
             toas.show()
             Log.d("AKSI","Telah ditekan cuy")
 
